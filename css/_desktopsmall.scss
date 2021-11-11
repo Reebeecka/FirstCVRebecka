@@ -1,0 +1,50 @@
+
+main{
+    //Making all the column1 & 2 flex
+    display: flex;
+    column-gap: 0;
+}
+
+.column1{
+    //With is for how much of the pagewidth the column takes
+    //Also changing the hight to fill the entire page
+    width: 45%;
+    background-color: $secondarycolor;
+    height: 100vh;
+    border-right: 3px solid $linecolor;
+    header{
+        //Chnging the sizes of text
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            width: 80%;
+            font-size: 1rem;
+        }
+        .column1-header-link{
+            //Moving the links from top left to over the image
+            position: absolute;
+            margin-right:35%;
+            top: 18rem;
+            li{
+                //Making the items be next to eachother instead of stacked
+                display: inline;
+            }
+        }
+        .column1-header-lang{
+            li{
+                margin-left: 19vw;
+                font-size: 1.5rem;
+            }
+        }
+        .column1-header-rebecka{
+            //Making the image a bit bigger and moving it to the left
+            width:150%;
+            margin-left: -40%;
+        }
+    }
+}
+.column2{
+    //The column size
+    width:55%;
+}

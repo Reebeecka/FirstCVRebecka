@@ -1,0 +1,175 @@
+
+body{
+    background-color:$basecolor;
+}
+.column1{
+
+    // setting the position and size of the column
+    word-wrap: break-word;
+    background-color:$basecolor;
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    z-index: 1;
+    border-bottom: 3px solid $linecolor;
+    
+    header{
+        font-family: $basefont;
+        
+        h1{
+            //Position and size of name
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            top:1rem;
+            font-family: $basefont;
+            font-size: 3rem;
+        }
+        
+        p{
+            margin:auto;
+            text-align: center;
+            width: 60%;
+            font-size: 0.8rem;
+        }
+        
+        .column1-header-link{
+            list-style-type: none;
+            position: absolute;
+            top:-1.8rem;
+            right:1.5rem;
+            text-align: center;
+            z-index: 3;
+            li{
+                a{
+                    i{ 
+                        //The icons to external links
+                        height: 3rem;
+                        width: 3rem;
+                        color:black;
+                    }
+                }
+            }
+        }
+        
+        .column1-header-lang{
+            list-style-type: none;
+            padding: 0;
+            align-items: center;
+            li{
+                font-size: 1rem;
+                font-style: italic;
+                margin-left: 45vw;
+            }
+        }
+        
+        .column1-header-rebecka{
+            //Position and size of image to make it responsive
+            width:100%; //100% of the width inside the column
+            height: auto;
+            max-width: 60rem;
+            margin-right: 10%;
+            position: absolute;
+            bottom: 0px;
+            z-index: -1; //The image is now behind text on Zoom
+        }
+    }
+}
+.column2{
+    //Setting the color and making sure the words wrap on zoom
+    word-wrap: break-word;
+    background-color: $basecolor;
+    position: relative;
+    .column2-headlines{
+    //Styling all headlines        
+        padding-top: 1rem;
+        padding-left: 1rem;
+        font-family: $basefont;
+        position: relative;
+    }
+    .column2-personalletter{
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            width: 90%;
+            font-size: 1rem;
+            padding-left: 1rem;
+        }
+    }
+    .column2-softcompetense{
+        ul{
+            //Styling the list elements with font and making list dots square
+            font-family: 'Times New Roman', Times, serif;
+            list-style-type: square;
+            //Styling the box behind the text
+            background-color:$secondarycolor;
+            width: 80%;
+            margin-left: 5%;
+            box-shadow: 5px 5px 10px $linecolor;
+            li{
+                line-height: 2rem;
+                .arrow{
+                    //The arrows next to the list items
+                    position:relative;
+                    top:3px;
+                    margin-left:8px;
+                    width:1rem;
+                    transition: ease 1s;
+                }
+                &:hover{
+                    //Hover effect when hovering over the entire text
+                    .arrow{
+                        transform:translateX(0.2rem);
+                    }
+                }
+            }
+        }
+    }
+    .column2-technicalcompetense{
+        ul{
+            font-size: 1.5rem;
+            width: 80%;
+            margin-left: -3%;
+            li{
+                //Styling the items to look like buttons, inline element makes them be in a line
+                position: relative;
+                display: inline;
+                background-color: #EEEEEE;
+                padding: 2px 6px 2px 6px;
+                border-top: 1px solid #CCCCCC;
+                border-right: 1px solid #333333;
+                border-bottom: 1px solid #333333;
+                border-left: 1px solid #CCCCCC;
+            }
+        }
+    }
+    .column2-worklife{
+        article{
+            //Positioning of all articles
+            position: relative;
+            margin-left: 5%;
+
+            //Margin top and bottom are for spacing between lines
+            h3{
+                font-family: $basefont;
+                margin-bottom: 0;
+                font-size: 1.3rem;
+            }
+            .column2-headlines-date{
+                margin-top: 0.2rem;
+                margin-left: 1rem;
+                margin-bottom: 0;
+                font-size: 0.8rem;
+            }
+            h4{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: $basefont;
+                font-size: 0.9rem;
+            }
+            .column2-headlines-production{
+                margin-top: 0;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

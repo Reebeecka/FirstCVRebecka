@@ -1,0 +1,21 @@
+//Variables for SAS
+$basefont: 'Lato', sans-serif; //imported font from google fonts for headlines
+$basecolor:#FEE5EA;
+$secondarycolor:#e8e8e8;
+$linecolor:#DEC7C9;
+
+@import '_normalize';
+
+//imports for mobile
+@import '_base';
+
+//imports for bigger screens
+@media screen and (min-width: 640px) {
+    @import '_tablet';
+}
+@media screen and (min-width: 1000px) {
+    @import '_desktopsmall';
+}
+@media screen and (min-width: 1300px) {
+    @import '_desktop';
+}

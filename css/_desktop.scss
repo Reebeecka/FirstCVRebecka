@@ -1,0 +1,93 @@
+.column1{
+    header{
+        .column1-header-lang{
+            //Positioning of the elements
+            li{
+                margin-left: 16vw;
+                font-size: 1.5rem;
+            }
+        }
+        .column1-header-rebecka{
+            //Making the size of image a bit smaler again and moving it to the right
+            width:120%;
+            margin-left: -20%;
+        }
+    }
+}
+.column2{
+    //Moving eferything to the right to make the headlines have a spot to go to
+    margin-left: 17rem;
+    .column2-headlines{
+        //Moving the headlines back to original position 
+        position: absolute;
+        margin-left: -17rem;
+        border-bottom: 3px solid $linecolor;
+    }
+
+    /*The h2 element in each .column2-... is the headline placement
+    The rest is sizing and placement with the use of margins*/
+    .column2-personalletter{
+        h2{
+            margin-top: -1rem;
+        }
+        p{
+            position:relative;
+            margin-top: 4rem;
+            margin-left: 0;
+            font-size: 1.2rem;
+        }
+    }
+    .column2-softcompetense{
+        ul{
+            margin-top: 3rem;
+            margin-left: 2%;
+            font-size: 1.2rem;
+        }
+    }
+    .column2-technicalcompetense{
+        h2{
+            margin-top: -1rem;
+        }
+        ul{
+            margin-top: 3rem;
+        }
+    }
+    .column2-worklife{
+        h2{
+            margin-top: 3rem;
+        }
+        div{
+            /*Making all articles flex inside the div 
+            and the div has a with of 90% of the column*/
+            display: flex;
+            width: 90%;
+            
+            article{
+                /*Styling all articles and they have a with of 30% each 
+                also adding a border and shadow to the boxes*/
+                margin-top: 3rem;
+                margin-right: 0.5rem;
+                width: 30%;
+                border: 0.5rem solid $secondarycolor;
+                box-shadow: 5px 5px 10px $linecolor;
+                text-align: center;
+                padding: 1rem;
+                h3{
+                    font-size: 1.5rem;
+                }
+                .column2-headlines-date{
+                    font-size: 0.8rem;
+                    margin-left: 0;
+                }
+                h4{
+                    font-size: 1rem;
+                    margin-top: 0.3rem;
+                }
+                .column2-headlines-production{
+                    margin-left: 0;
+                    margin-top: 0.1rem;
+                }
+            }
+        }
+    }
+}

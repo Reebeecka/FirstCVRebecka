@@ -509,6 +509,10 @@ body {
   margin-left: 1rem;
 }
 
+.column2 .column2-repos {
+  font-family: "Lato", sans-serif;
+}
+
 @media screen and (min-width: 640px) {
   .column1 {
     height: 90vh;
@@ -633,6 +637,26 @@ body {
   .column2 .column2-worklife div article .column2-headlines-production {
     margin-left: 0;
     margin-top: 0.1rem;
+  }
+  .column2 .column2-repos {
+    margin-top: 4rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+  .column2 .column2-repos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

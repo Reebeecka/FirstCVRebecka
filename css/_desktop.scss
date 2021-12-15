@@ -90,4 +90,18 @@
             }
         }
     }
+    .column2-repos{
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            width: 100%;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+            width: 80%;
+        }
+    }
 }
+
